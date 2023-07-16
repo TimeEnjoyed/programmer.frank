@@ -1,0 +1,18 @@
+{; login credentials. The token is without the "oauth:" prefix
+ :channel "10x_programmer"
+ :token "your_token_here"
+ :username "10x_programmer"
+
+ ; comma separated list of users who are allowed to use the bot
+ :allowed "10x_programmer"
+ 
+ ; font name for the counter
+ :font "Dialog"
+
+ ; colors in RGB format
+ :background-color "ff00ff"
+ :foreground-color "ffffff"
+
+ ; time format for output
+ ; can be also "HH:mm:ss" or just "ss"
+ :time-format "mm:ss"}

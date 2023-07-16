@@ -18,9 +18,9 @@ cd stopwatchbot
 ```
 Copy the template environment file to create your own config.env:
 ```bash
-cp config.env.template config.env
+cp config.edn.template config.edn
 ```
-Open the config.env file and fill in the USERNAME, TOKEN, CHANNEL, and ALLOWED variables, and change the FONT if needed. [Here](https://dev.twitch.tv/docs/authentication/getting-tokens-oauth/) is explained how to get the OAUTH token for Twitch.
+Open the config.edn file and change the login credentials, and allowed users who can use the `!sw` chat bot command. [Here](https://dev.twitch.tv/docs/authentication/getting-tokens-oauth/) is explained how to get the OAUTH token for Twitch. Optionally you can adjust the other settings as well.
 
 ## Usage
 Start the bot by running the run.sh script:
@@ -35,6 +35,17 @@ Sending token
 Sending: NICK 10x_programmer
 Sending: JOIN #10x_programmer
 Sending: PRIVMSG #10x_programmer :stopwatch-bot ready
+
+Received:  :tmi.twitch.tv 001 10x_programmer :Welcome, GLHF!
+:tmi.twitch.tv 002 10x_programmer :Your host is tmi.twitch.tv
+:tmi.twitch.tv 003 10x_programmer :This server is rather new
+:tmi.twitch.tv 004 10x_programmer :-
+:tmi.twitch.tv 375 10x_programmer :-
+:tmi.twitch.tv 372 10x_programmer :You are in a maze of twisty passages, all alike.
+:tmi.twitch.tv 376 10x_programmer :>
+Received:  :10x_programmer!10x_programmer@10x_programmer.tmi.twitch.tv JOIN #10x_programmer
+:10x_programmer.tmi.twitch.tv 353 10x_programmer = #10x_programmer :10x_programmer
+:10x_programmer.tmi.twitch.tv 366 10x_programmer #10x_programmer :End of /NAMES list
 ```
 and a window like this will open:
 
@@ -55,4 +66,5 @@ From the chat where the bot has joined, you can now start the countdown. There a
 3. HH:MM:SS (Hours:Minutes:Seconds):
    - Use this format to represent time in hours, minutes, and seconds.
    - Example: `!sw 1:15:30` represents 1 hour, 15 minutes, and 30 seconds.
-   
+
+On the terminal, you can also enter chat messages, which will be sent to the IRC server. You can stop the bot with ctrl-c.
