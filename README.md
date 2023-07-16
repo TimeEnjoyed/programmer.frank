@@ -5,7 +5,7 @@ This is a Clojure application that provides a stopwatch bot.
 These instructions will get you a copy of the project up and running on your local machine.
 
 ### Prerequisites
-You need to have [Clojure](https://clojure.org/) installed on your machine. 
+You need to have [Clojure](https://clojure.org/guides/install_clojure) installed on your machine. 
 
 ### Installation
 Clone the repository:
@@ -51,20 +51,17 @@ and a window like this will open:
 
 ![Window Screenshot](window.png)
 
-The magenta background (color `#ff00ff`) makes it easier to integrate it in OBS with transparent background.
+The magenta background (color `#ff00ff`) makes it easier to integrate it in OBS and to overlay it with transparent background, if desired. See [here](https://obsproject.com/kb/color-key-filter) how to do it.
 
 From the chat where the bot has joined, you can now start the countdown. There are three ways to specify the time:
 
-1. SS (Seconds):
-   - Use this format to represent time in seconds only.
+1. Seconds:
    - Example: `!sw 35` represents 35 seconds.
 
-2. MM:SS (Minutes:Seconds):
-   - Use this format to represent time in minutes and seconds.
+1. Minutes:Seconds:
    - Example: `!sw 2:45` represents 2 minutes and 45 seconds.
 
-3. HH:MM:SS (Hours:Minutes:Seconds):
-   - Use this format to represent time in hours, minutes, and seconds.
+1. Hours:Minutes:Seconds:
    - Example: `!sw 1:15:30` represents 1 hour, 15 minutes, and 30 seconds.
 
 On the terminal, you can also enter chat messages, which will be sent to the IRC server. You can stop the bot with ctrl-c.
