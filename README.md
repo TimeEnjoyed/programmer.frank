@@ -65,3 +65,36 @@ From the chat where the bot has joined, you can now start the countdown. There a
    - Example: `!sw 1:15:30` represents 1 hour, 15 minutes, and 30 seconds.
 
 On the terminal, you can also enter chat messages, which will be sent to the IRC server. You can stop the bot with ctrl-c.
+
+
+# Docker Instructions (Windows)
+*Follow the above README instructions, including creating a config file**
+
+
+**Download and Install:**
+[VcXsrv](https://sourceforge.net/projects/vcxsrv/)
+
+
+- Launch `XLaunch`
+  - Multiple Windows
+  - Display number: -1
+  - `Next >`
+  - Start no client
+  - `Next >`
+  - `Keep all deafults`
+  - `Next >`
+  - `Finish`
+
+
+*You won't notice anything popup just yet*
+
+
+**Build and Run Docker**
+```shell
+docker-compose build
+docker-compose up
+```
+
+**After Demo:**
+- Close Docker
+- Close XLaunch by Right Clicking Tray Icon and Exit.
